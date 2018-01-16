@@ -55,7 +55,7 @@
 
 <body>
 
-<div class="container">
+<div class="container-fluid">
 
 	<div class="row">
     	
@@ -63,11 +63,16 @@
     </div>	
     
     <div class="row">
-    
-    	<div class="col-lg-2 col-md-3 col-sm-6 col-12"> 
-        	<img src="img/Koala.jpg" alt="Koala" class="img-fluid">
+    	<?php for($n=0;$n<1200;$n++) : ?>
+    	<div class="col-xl-1 col-lg-2 col-md-3 col-sm-6 col-12"> 
+        	
+            
+            <img src="img/Koala.jpg" alt="Koala" class="img-fluid rounded-circle">
+            <span class="glyphicon glyphicon-envelope"></span>
+            
+            
         </div>
-
+		<?php endfor ?>
     
     </div>
 
